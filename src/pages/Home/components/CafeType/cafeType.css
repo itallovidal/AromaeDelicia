@@ -1,0 +1,39 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+.container_cafeType {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+.container_cafeType h3 {
+  font-size: 2rem;
+  font-style: italic;
+}
+.container_cafeType picture {
+  height: 100px;
+}
+
+/*# sourceMappingURL=cafeType.css.map */

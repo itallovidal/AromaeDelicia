@@ -1,0 +1,74 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+.restaurante_container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 700px) {
+  .restaurante_container {
+    flex-direction: column;
+    margin-bottom: 4.5rem;
+  }
+}
+.restaurante_container picture {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+@media (max-width: 700px) {
+  .restaurante_container picture {
+    width: 100%;
+  }
+}
+.restaurante_container picture img {
+  height: 100%;
+}
+.restaurante_container .restaurante_infos {
+  width: 50%;
+}
+@media (max-width: 700px) {
+  .restaurante_container .restaurante_infos {
+    width: 100%;
+  }
+}
+.restaurante_container .restaurante_infos h3 {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.restaurante_container .restaurante_infos p {
+  position: relative;
+}
+.restaurante_container .restaurante_infos p:after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 30px;
+  background: #FAEAB1;
+  bottom: -1rem;
+  left: 0;
+}
+
+/*# sourceMappingURL=restaurante.css.map */

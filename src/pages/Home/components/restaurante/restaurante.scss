@@ -1,0 +1,54 @@
+@use '../../../../partials/_config.scss' as *;
+
+.restaurante_container{
+  display: flex;
+  gap: $escala-p;
+  margin-bottom: $escala-p;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    margin-bottom: $escala-xg;
+  }
+
+  picture{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 8px;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .restaurante_infos{
+    width: 50%;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+
+    h3{
+      font-size: $escala-m;
+      font-style: italic;
+      margin-bottom: $escala-pp;
+    }
+
+    p{
+      position: relative;
+
+      &:after{
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 30px;
+        background: $cor-2;
+        bottom: -$escala-pp;
+        left: 0;
+      }
+    }
+  }
+}

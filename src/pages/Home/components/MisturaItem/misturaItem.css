@@ -1,0 +1,47 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+.container_misturaItem {
+  position: relative;
+}
+.container_misturaItem picture {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.container_misturaItem picture img {
+  height: 100%;
+}
+.container_misturaItem .title {
+  background: #1A120B;
+  position: absolute;
+  color: white;
+  left: 0;
+  font-size: 1.5rem;
+  bottom: -15px;
+  padding: 1.5rem;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=misturaItem.css.map */

@@ -1,0 +1,37 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+.wrapper_externo {
+  padding: 3rem;
+}
+@media (max-width: 700px) {
+  .wrapper_externo {
+    padding: 1rem;
+  }
+}
+.wrapper_externo .wrapper_interno {
+  width: min(100%, 60rem);
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=wrapper.css.map */

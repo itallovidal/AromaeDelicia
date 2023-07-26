@@ -1,0 +1,17 @@
+@use '../../../../partials/_config.scss' as *;
+
+.container_cafeType{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $escala-p;
+  text-align: center;
+
+  h3{
+    font-size: $escala-m;
+    font-style: italic;
+  }
+  picture{
+    height: 100px;
+  }
+}

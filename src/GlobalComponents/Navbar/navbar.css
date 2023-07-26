@@ -1,0 +1,107 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+#navbar_container {
+  background: #1A120B;
+}
+@media (max-width: 700px) {
+  #navbar_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+}
+#navbar_container #navbar_wrapper {
+  height: 100px;
+  margin: 0 auto;
+  width: 60rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar_container #navbar_wrapper #btn_open, #navbar_container #navbar_wrapper #btn_close {
+  display: none;
+}
+@media (max-width: 700px) {
+  #navbar_container #navbar_wrapper {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  #navbar_container #navbar_wrapper #btn_open, #navbar_container #navbar_wrapper #btn_close {
+    display: initial;
+    font-size: 2rem;
+    color: #FAEAB1;
+  }
+}
+#navbar_container #navbar_wrapper #navbar_icon, #navbar_container #navbar_wrapper nav a {
+  color: white;
+}
+#navbar_container #navbar_wrapper #navbar_icon {
+  width: 30%;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Lisu Bosa", serif;
+}
+@media (max-width: 700px) {
+  #navbar_container #navbar_wrapper #navbar_icon {
+    font-size: initial;
+    width: auto;
+  }
+}
+#navbar_container #navbar_wrapper .navOpen {
+  right: 0;
+}
+#navbar_container #navbar_wrapper nav {
+  display: flex;
+  transition: 200ms;
+}
+@media (max-width: 700px) {
+  #navbar_container #navbar_wrapper nav {
+    right: -100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 90%;
+    height: 100vh;
+    background: #1A120B;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#navbar_container #navbar_wrapper nav a {
+  padding: 1.5rem;
+  border-radius: 5px;
+  transition: 200ms;
+  margin-inline: 1rem;
+}
+#navbar_container #navbar_wrapper nav a:hover {
+  background: #FAEAB1;
+  color: #1A120B;
+}
+
+/*# sourceMappingURL=navbar.css.map */

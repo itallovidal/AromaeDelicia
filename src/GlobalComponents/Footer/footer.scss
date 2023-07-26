@@ -1,0 +1,42 @@
+@use '../../partials/_config.scss' as *;
+
+footer{
+  background: $cor-3;
+  padding-top: 50px;
+
+  #wrapper_footer{
+    padding: $escala-m $escala-m 100px $escala-m  ;
+    background: $cor-2;
+
+    #content{
+      display: flex;
+      justify-content: space-between;
+      width: $largura-total;
+      margin: 0px auto;
+      align-items: center;
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+      }
+
+      p{
+        width: 40%;
+
+        @media (max-width: 700px) {
+          width: 100%;
+          margin-bottom: $escala-m;
+        }
+      }
+
+      #footer_icon{
+        font-family: $fonte-1;
+        font-style: italic;
+        font-size: $escala-m;
+        color: $cor-2;
+        filter: brightness(80%);
+      }
+    }
+
+
+  }
+}

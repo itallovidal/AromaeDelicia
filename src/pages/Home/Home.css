@@ -1,0 +1,71 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+#container_mistura {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  #container_mistura {
+    margin-block: 3rem;
+  }
+}
+#container_mistura h1 {
+  font-style: "Crimson Text", serif;
+}
+#container_mistura #wrapper_itens {
+  display: grid;
+  grid-auto-flow: column;
+  height: 250px;
+  width: 100%;
+  gap: 1.5rem;
+  margin-block: 4.5rem;
+}
+@media (max-width: 700px) {
+  #container_mistura #wrapper_itens {
+    margin-block: 1rem 3rem;
+  }
+}
+
+#container_tiposCafe {
+  background: #FAF8F1;
+  padding: 6rem;
+}
+@media (max-width: 700px) {
+  #container_tiposCafe {
+    padding: 1.5rem;
+  }
+}
+#container_tiposCafe #wrapper_types {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 700px) {
+  #container_tiposCafe #wrapper_types {
+    grid-auto-flow: row;
+    gap: 4.5rem;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,61 @@
+.showing {
+  opacity: 0;
+  animation: showing 500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.showing {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+footer {
+  background: #FAF8F1;
+  padding-top: 50px;
+}
+footer #wrapper_footer {
+  padding: 2rem 2rem 100px 2rem;
+  background: #FAEAB1;
+}
+footer #wrapper_footer #content {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 60rem);
+  margin: 0px auto;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  footer #wrapper_footer #content {
+    flex-direction: column;
+  }
+}
+footer #wrapper_footer #content p {
+  width: 40%;
+}
+@media (max-width: 700px) {
+  footer #wrapper_footer #content p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+footer #wrapper_footer #content #footer_icon {
+  font-family: "Lisu Bosa", serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #FAEAB1;
+  filter: brightness(80%);
+}
+
+/*# sourceMappingURL=footer.css.map */

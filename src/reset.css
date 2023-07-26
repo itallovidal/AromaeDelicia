@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p, a, span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+picture {
+  display: block;
+}
+picture img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  transition: 200ms;
+  cursor: pointer;
+}
+button:hover {
+  background: #1A120B;
+  color: #FAEAB1;
+}
+
+.btn {
+  font-size: 24px;
+  border: 2px solid #1A120B;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  main#wrapper {
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=reset.css.map */

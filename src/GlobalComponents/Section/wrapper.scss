@@ -1,0 +1,14 @@
+@use '../../partials/config' as *;
+
+.wrapper_externo{
+  padding: $escala-g;
+
+  @media (max-width: 700px) {
+    padding: $escala-pp;
+  }
+
+  .wrapper_interno{
+    width: $largura-total;
+    margin: 0 auto;
+  }
+}

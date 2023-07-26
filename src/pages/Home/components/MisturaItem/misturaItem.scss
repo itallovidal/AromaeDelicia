@@ -1,0 +1,28 @@
+@use '../../../../partials/_config.scss' as *;
+
+.container_misturaItem{
+  position: relative;
+
+
+  picture{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .title{
+    background: $cor-1;
+    position: absolute;
+    color: white;
+    left: 0;
+    font-size: $escala-p;
+    bottom: -15px;
+    padding: $escala-p;
+    font-style: italic;
+  }
+}
