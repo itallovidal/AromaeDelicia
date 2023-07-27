@@ -1,0 +1,55 @@
+@use '../../partials/_config.scss' as *;
+
+main#catalogo{
+  #container_filtrosNav{
+    h1{
+      text-align: center;
+      font-size: $escala-g;
+    }
+
+    #nav_filtros{
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-block: $escala-m;
+      border-block: 2px solid $cor-1;
+
+      a{
+        color: $cor-1;
+        font-size: $escala-m;
+        font-style: italic;
+        padding: $escala-p;
+        transition: 100ms 500ms;
+        text-align: center;
+        width: 25%;
+      }
+
+      a:hover{
+        background: $cor-1;
+        color: $cor-2;
+      }
+
+      a.active {
+        background: $cor-1;
+        color: $cor-2;
+        width: 50%;
+      }
+    }
+  }
+
+  #container_filtrosContent{
+    .wrapper_interno{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 50px;
+      min-height: 500px;
+
+      #container_listagemProdutos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}

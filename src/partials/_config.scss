@@ -17,8 +17,9 @@ $cor-3: #FAF8F1;
 $largura-total: min(100%, 60rem);
 
 .showing{
-  opacity: 0;
-  animation: showing 500ms forwards;
+  opacity: 0 ;
+  transform: translateY(20px);
+  animation: showing 1500ms forwards;
 }
 
 @keyframes showing {
@@ -31,7 +32,7 @@ $largura-total: min(100%, 60rem);
   }
 }
 
-.showing{
+.hiding{
   animation: hiding 500ms forwards;
 }
 

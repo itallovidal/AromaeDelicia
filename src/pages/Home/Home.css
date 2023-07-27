@@ -1,6 +1,7 @@
 .showing {
   opacity: 0;
-  animation: showing 500ms forwards;
+  transform: translateY(20px);
+  animation: showing 1500ms forwards;
 }
 
 @keyframes showing {
@@ -12,7 +13,7 @@
     transform: translateY(0);
   }
 }
-.showing {
+.hiding {
   animation: hiding 500ms forwards;
 }
 
@@ -28,9 +29,6 @@
   #container_mistura {
     margin-block: 3rem;
   }
-}
-#container_mistura h1 {
-  font-style: "Crimson Text", serif;
 }
 #container_mistura #wrapper_itens {
   display: grid;

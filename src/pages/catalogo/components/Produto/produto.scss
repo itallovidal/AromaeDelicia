@@ -1,0 +1,48 @@
+@use '../../../../partials/_config.scss' as *;
+
+.container_produto{
+  position: relative;
+  height: 200px;
+  width: calc(50% - $escala-g / 2);
+  margin-bottom: $escala-xx-gg;
+
+  picture{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .preco{
+    position: absolute;
+    padding: $escala-pp;
+    width: 100px;
+    text-align: center;
+    background: $cor-1;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    left: 0;
+    color: $cor-2;
+    transition: 300ms;
+    cursor: pointer;
+  }
+
+  .preco:hover{
+    transform:  scale(1.1)
+                translateY(-60%);
+  }
+
+  p{
+    font-style: italic;
+    padding: $escala-pp;
+    text-align: right;
+    font-size: $escala-p;
+  }
+
+
+}

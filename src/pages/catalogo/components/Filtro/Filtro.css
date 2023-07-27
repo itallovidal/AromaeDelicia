@@ -1,0 +1,53 @@
+.showing {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: showing 1500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hiding {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+#container_filtro {
+  padding: 1.5rem;
+  background: #FAF8F1;
+  border-radius: 10px;
+  height: fit-content;
+  position: sticky;
+  top: 10%;
+}
+#container_filtro > div {
+  margin-bottom: 1.5rem;
+}
+#container_filtro h2 {
+  border-bottom: 2px solid #FAEAB1;
+  padding-bottom: 1rem;
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+  font-size: 2rem;
+  color: #1A120B;
+}
+#container_filtro .item {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1rem;
+}
+#container_filtro .item input[type=checkbox] {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Filtro.css.map */

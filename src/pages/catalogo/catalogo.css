@@ -1,0 +1,67 @@
+.showing {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: showing 1500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hiding {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+main#catalogo #container_filtrosNav h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+main#catalogo #container_filtrosNav #nav_filtros {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 2rem;
+  border-block: 2px solid #1A120B;
+}
+main#catalogo #container_filtrosNav #nav_filtros a {
+  color: #1A120B;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 1.5rem;
+  transition: 100ms 500ms;
+  text-align: center;
+  width: 25%;
+}
+main#catalogo #container_filtrosNav #nav_filtros a:hover {
+  background: #1A120B;
+  color: #FAEAB1;
+}
+main#catalogo #container_filtrosNav #nav_filtros a.active {
+  background: #1A120B;
+  color: #FAEAB1;
+  width: 50%;
+}
+main#catalogo #container_filtrosContent .wrapper_interno {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  min-height: 500px;
+}
+main#catalogo #container_filtrosContent .wrapper_interno #container_listagemProdutos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=catalogo.css.map */

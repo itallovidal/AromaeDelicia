@@ -1,0 +1,65 @@
+.showing {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: showing 1500ms forwards;
+}
+
+@keyframes showing {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hiding {
+  animation: hiding 500ms forwards;
+}
+
+@keyframes hiding {
+  100% {
+    opacity: 0;
+  }
+}
+.container_produto {
+  position: relative;
+  height: 200px;
+  width: calc(50% - 1.5rem);
+  margin-bottom: 8rem;
+}
+.container_produto picture {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.container_produto picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container_produto .preco {
+  position: absolute;
+  padding: 1rem;
+  width: 100px;
+  text-align: center;
+  background: #1A120B;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  left: 0;
+  color: #FAEAB1;
+  transition: 300ms;
+  cursor: pointer;
+}
+.container_produto .preco:hover {
+  transform: scale(1.1) translateY(-60%);
+}
+.container_produto p {
+  font-style: italic;
+  padding: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=produto.css.map */

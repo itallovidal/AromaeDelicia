@@ -1,0 +1,158 @@
+{
+  "cafes": [
+    {
+      "id": 1,
+      "nome": "Vanilla Diceys",
+      "preco": "20.25",
+      "tempoPreparo": "29",
+      "sabor": "forte",
+      "srcFoto": "/cafes/cafe-1.jpg",
+      "categoria": "cafe"
+    },
+    {
+      "id": 2,
+      "nome": "Blueberry Latts",
+      "preco": "18.50",
+      "tempoPreparo": "38",
+      "sabor": "forte",
+      "srcFoto": "/cafes/cafe-2.jpg",
+      "categoria": "cafe"
+    },
+    {
+      "id": 3,
+      "nome": "Ghostbusters Brown",
+      "preco": "25",
+      "tempoPreparo": "35",
+      "sabor": "forte",
+      "srcFoto": "/cafes/cafe-3.jpg",
+      "categoria": "cafe"
+    },
+    {
+      "id": 4,
+      "nome": "Strawberry Fields",
+      "preco": "17.25",
+      "tempoPreparo": "15",
+      "sabor": "fraco",
+      "srcFoto": "/cafes/cafe-4.jpg",
+      "categoria": "cafe"
+    },
+    {
+      "id": 5,
+      "nome": "Scone Comb",
+      "preco": "8",
+      "tempoPreparo": "12",
+      "sabor": "fraco",
+      "srcFoto": "/cafes/cafe-5.jpg",
+      "categoria": "cafe"
+    },
+    {
+      "id": 6,
+      "nome": "BIG Bil",
+      "preco": "12",
+      "tempoPreparo": "5",
+      "sabor": "cappuccinos",
+      "srcFoto": "/cafes/cafe-6.jpg",
+      "categoria": "cafe"
+    },    {
+      "id": 7,
+      "nome": "No Money Coffee",
+      "preco": "1.25",
+      "tempoPreparo": "10",
+      "sabor": "cappuccinos",
+      "srcFoto": "/cafes/cafe-7.jpg",
+      "categoria": "cafe"
+    }
+  ],
+  "donuts": [
+    {
+      "id": 1,
+      "nome": "Homer Donut",
+      "preco": "12.50",
+      "tamanho": "grande",
+      "srcFoto": "/donuts/donut-1.jpg",
+      "categoria": "donuts"
+    },
+    {
+      "id": 2,
+      "nome": "Opsie Barbie",
+      "preco": "12.50",
+      "tamanho": "médio",
+      "srcFoto": "/donuts/donut-2.jpg",
+      "categoria": "donuts"
+    },
+    {
+      "id": 3,
+      "nome": "Biscuit Donut",
+      "preco": "22",
+      "tamanho": "pequeno",
+      "srcFoto": "/donuts/donut-3.jpg",
+      "categoria": "donuts"
+    },
+    {
+      "id": 4,
+      "nome": "Neon Donut",
+      "preco": "18.50",
+      "tamanho": "pequeno",
+      "srcFoto": "/donuts/donut-4.jpg",
+      "categoria": "donuts"
+    },
+    {
+      "id": 5,
+      "nome": "Chocolate Standard",
+      "preco": "18.50",
+      "tamanho": "grande",
+      "srcFoto": "/donuts/donut-5.jpg",
+      "categoria": "donuts"
+    },
+    {
+      "id": 6,
+      "nome": "White Chocolatey",
+      "preco": "22",
+      "tamanho": "médio",
+      "srcFoto": "/donuts/donut-6.jpg",
+      "categoria": "donuts"
+    }
+  ],
+  "cupcakes": [
+    {
+      "id":"1",
+      "nome":"Cupcake de maracujá",
+      "preco": "10",
+      "srcFoto": "/cupcakes/cupcake-1.jpg",
+      "categoria": "cupcake",
+      "recheio": "maracujá"
+    },
+    {
+      "id":"2",
+      "nome":"Cupcake Moranguinho",
+      "preco": "15",
+      "srcFoto": "/cupcakes/cupcake-2.jpg",
+      "categoria": "cupcake",
+      "recheio": "morango"
+    },
+    {
+      "id":"3",
+      "nome":"Cupcake Red Velvet",
+      "preco": "18",
+      "srcFoto": "/cupcakes/cupcake-3.jpg",
+      "categoria": "cupcake",
+      "recheio": "chocolate"
+    },
+    {
+      "id":"4",
+      "nome":"Cupcake Ferrero Rocher",
+      "preco": "20",
+      "srcFoto": "/cupcakes/cupcake-4.jpg",
+      "categoria": "cupcake",
+      "recheio": "chocolate"
+    },
+    {
+      "id":"5",
+      "nome":"Cupcake Cosmo e Wanda",
+      "preco": "20",
+      "srcFoto": "/cupcakes/cupcake-5.jpg",
+      "categoria": "cupcake",
+      "recheio": "baunilha"
+    }
+  ]
+}

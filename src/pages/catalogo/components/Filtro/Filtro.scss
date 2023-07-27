@@ -1,0 +1,33 @@
+@use '../../../../partials/_config.scss' as *;
+
+#container_filtro{
+  padding: $escala-p;
+  background: $cor-3;
+  border-radius: 10px ;
+  height: fit-content;
+  position: sticky;
+  top: 10%;
+
+  > div{
+    margin-bottom: $escala-p;
+  }
+
+  h2{
+    border-bottom: 2px solid $cor-2;
+    padding-bottom: $escala-pp;
+    font-style: italic;
+    font-family: $fonte-2;
+    font-size: $escala-m;
+    color: $cor-1;
+  }
+
+  .item{
+    display: flex;
+    justify-content: space-between;
+    margin-block: $escala-pp;
+
+    input[type='checkbox']{
+      cursor: pointer;
+    }
+  }
+}
