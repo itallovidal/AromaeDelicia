@@ -19,8 +19,8 @@ function Navbar() {
           </button>
           <Link to={"/"}> Home </Link>
           <Link to={"/catalogo"}> Catálogo </Link>
-          <Link to={""}> Sobre </Link>
-          <Link to={""}> Lojas </Link>
+          <Link to={"/#sobre"}> Sobre </Link>
+          <Link to={"/#lojas"}> Lojas </Link>
         </nav>
       </div>
     </div>
