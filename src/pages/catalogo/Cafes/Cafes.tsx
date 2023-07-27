@@ -39,10 +39,8 @@ function Cafes() {
         return filtraValores(Number(item.preco), filtro.nome)
       }
       if(filtro.categoria === 'tempoPreparo'){
-        console.log(item)
         return filtraTempo(Number(item.tempoPreparo), filtro.nome)
       }
-
       return item[filtro.categoria as keyof CafeProduct].includes(filtro.nome.toLowerCase())
     })
 

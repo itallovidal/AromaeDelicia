@@ -6,6 +6,10 @@
   width: calc(50% - $escala-g / 2);
   margin-bottom: $escala-xx-gg;
 
+  @media (max-width: 700px){
+    width: 100%;
+  }
+
   picture{
     overflow: hidden;
     height: 100%;

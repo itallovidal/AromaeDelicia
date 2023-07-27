@@ -28,6 +28,11 @@
   width: calc(50% - 1.5rem);
   margin-bottom: 8rem;
 }
+@media (max-width: 700px) {
+  .container_produto {
+    width: 100%;
+  }
+}
 .container_produto picture {
   overflow: hidden;
   height: 100%;

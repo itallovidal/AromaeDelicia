@@ -1,12 +1,53 @@
 @use '../../../../partials/_config.scss' as *;
 
-#container_filtro{
+.openNav{
+  grid-template-rows: 50px 1fr !important;
+}
+
+#wrapper_filtro{
+  position: sticky;
   padding: $escala-p;
   background: $cor-3;
   border-radius: 10px ;
   height: fit-content;
-  position: sticky;
   top: 10%;
+  z-index: 10;
+  transition: 400ms;
+
+  @media (max-width: 700px) {
+    grid-template-rows: 30px 0fr;
+    display: grid;
+
+    #btnFilterNav {
+      display: flex !important;
+      background: $cor-1;
+      color: white;
+      border-radius: 50%;
+      width: 30px !important;
+      height: 30px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      transition: 400ms;
+    }
+
+    .btnNavOpen{
+      transform: rotate(180deg);
+    }
+  }
+
+  #btnFilterNav{
+    display: none;
+  }
+}
+
+#container_filtro{
+  overflow: hidden;
+  @media (max-width: 700px) {
+    top: 15%;
+    display: grid;
+    width: 100% !important;
+    }
 
   > div{
     margin-bottom: $escala-p;
@@ -14,7 +55,7 @@
 
   h2{
     border-bottom: 2px solid $cor-2;
-    padding-bottom: $escala-pp;
+    padding-block: $escala-p;
     font-style: italic;
     font-family: $fonte-2;
     font-size: $escala-m;
@@ -25,6 +66,7 @@
     display: flex;
     justify-content: space-between;
     margin-block: $escala-pp;
+    overflow: hidden;
 
     input[type='checkbox']{
       cursor: pointer;

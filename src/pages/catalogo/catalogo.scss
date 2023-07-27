@@ -15,40 +15,64 @@ main#catalogo{
       margin-block: $escala-m;
       border-block: 2px solid $cor-1;
 
+      @media (max-width: 700px){
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
       a{
         color: $cor-1;
         font-size: $escala-m;
         font-style: italic;
         padding: $escala-p;
-        transition: 100ms 500ms;
+        transition: 50ms 500ms;
         text-align: center;
         width: 25%;
+
+        @media (max-width: 700px){
+          width: 100%;
+        }
       }
 
       a:hover{
         background: $cor-1;
         color: $cor-2;
+
+        @media (max-width: 700px){
+          color: $cor-1;
+          background: $cor-2;
+        }
       }
 
       a.active {
         background: $cor-1;
         color: $cor-2;
         width: 50%;
+
+        @media (max-width: 700px){
+          width: 100%;
+        }
       }
     }
   }
 
   #container_filtrosContent{
+
     .wrapper_interno{
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 50px;
       min-height: 500px;
 
+      @media (max-width: 700px){
+        grid-template-columns: 1fr;
+      }
+
       #container_listagemProdutos{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
       }
     }
   }

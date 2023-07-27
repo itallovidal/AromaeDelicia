@@ -34,29 +34,56 @@ main#catalogo #container_filtrosNav #nav_filtros {
   margin-block: 2rem;
   border-block: 2px solid #1A120B;
 }
+@media (max-width: 700px) {
+  main#catalogo #container_filtrosNav #nav_filtros {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
 main#catalogo #container_filtrosNav #nav_filtros a {
   color: #1A120B;
   font-size: 2rem;
   font-style: italic;
   padding: 1.5rem;
-  transition: 100ms 500ms;
+  transition: 50ms 500ms;
   text-align: center;
   width: 25%;
+}
+@media (max-width: 700px) {
+  main#catalogo #container_filtrosNav #nav_filtros a {
+    width: 100%;
+  }
 }
 main#catalogo #container_filtrosNav #nav_filtros a:hover {
   background: #1A120B;
   color: #FAEAB1;
+}
+@media (max-width: 700px) {
+  main#catalogo #container_filtrosNav #nav_filtros a:hover {
+    color: #1A120B;
+    background: #FAEAB1;
+  }
 }
 main#catalogo #container_filtrosNav #nav_filtros a.active {
   background: #1A120B;
   color: #FAEAB1;
   width: 50%;
 }
+@media (max-width: 700px) {
+  main#catalogo #container_filtrosNav #nav_filtros a.active {
+    width: 100%;
+  }
+}
 main#catalogo #container_filtrosContent .wrapper_interno {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 50px;
   min-height: 500px;
+}
+@media (max-width: 700px) {
+  main#catalogo #container_filtrosContent .wrapper_interno {
+    grid-template-columns: 1fr;
+  }
 }
 main#catalogo #container_filtrosContent .wrapper_interno #container_listagemProdutos {
   display: flex;
